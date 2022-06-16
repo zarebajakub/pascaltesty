@@ -225,6 +225,6 @@ with open('test1_correct_syntax') as f:
 code = "".join(lines)
 parser = yacc.yacc()
 parser.parse(code)
-with open('test1_out.txt', 'w') as file:
+with open('../Pascal-To-C-Compiler/test1_out.txt', 'w') as file:
     file.write(c_Code)
 
